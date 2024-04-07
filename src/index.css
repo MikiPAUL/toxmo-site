@@ -180,3 +180,28 @@ button[type="submit"] {
     width: 80%;
   }
 }
+
+@media screen and (max-device-width: 800px) {
+  :root {
+    font-size: 12px;
+  }
+
+  .waitlist__form {
+    gap: 0px;
+  }
+
+  .product__content--left,
+  .product__content--right {
+    min-width: 200px;
+    padding: 1rem;
+  }
+
+  #product .container {
+    padding: 1rem;
+    margin: auto;
+  }
+
+  /* button[type=submit] {
+    padding-bottom: 1rem;
+  } */
+}
