@@ -1,9 +1,9 @@
 function Contact() {
     return (
-        <footer style={{ backgroundColor: '#1b1b1b' }}>
+        <footer style={{ backgroundColor: '#1b1b1b' }} id="contact">
             <div className="container" style={{ maxWidth: '400px' }}>
                 <div className="footer__logo" >
-                    <img src="src/assets/logo.png" alt="Toxmo Logo" style={{ margin: '0 auto' }} />
+                    <img src="/assets/logo.png" alt="Toxmo Logo" style={{ margin: '0 auto' }} />
                 </div>
                 <nav style={{ paddingTop: '2rem', color: '#6b6b6b' }}>
                     <ul className="flex-row" style={{ flexWrap: 'wrap', gap: '10px' }}>

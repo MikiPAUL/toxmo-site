@@ -2,10 +2,10 @@ function Product() {
     const paraStyle = { lineHeight: 1.5, color: '#6b6b6b' }
     const h2Style = { lineHeight: 3, fontSize: '2rem', fontWeight: 'bold' }
     return (
-        <section className="container">
+        <section className="container" id="product">
             <div className="bit flex-row flex-wrap" style={{ justifyContent: 'space-evenly', flexWrap: 'wrap' }}>
-                <div className="product__img product__content--left">
-                    <iframe width="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1"></iframe>
+                <div className="product__img product__content--left center-iframe">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1"></iframe>
                 </div>
                 <div className="product__content product__content--right">
                     <h3 >FUTURE OF COMMERCE IS SOCIAL, VIDEO-BASED</h3>
@@ -23,7 +23,7 @@ function Product() {
                     </p>
                 </div>
                 <div className="product__img product__content--right">
-                    <img src="src/assets/team_buy.jpeg" alt="Team buying feature" height='500px' className="image_shadow" />
+                    <img src="/assets/team_buy.jpeg" alt="Team buying feature" height='500px' className="image_shadow" />
                 </div>
             </div>
         </section >

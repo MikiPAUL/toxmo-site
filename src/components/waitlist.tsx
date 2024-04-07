@@ -1,6 +1,6 @@
 function WaitList() {
     return (
-        <section style={{ backgroundColor: '#ffd500', color: 'white' }}>
+        <section style={{ backgroundColor: '#ffd500', color: 'white' }} id="waitlist">
             <div className="container">
                 <h3 style={{ textAlign: "center", paddingBottom: '1.5rem', color: '#1b1b1b', fontWeight: 400, lineHeight: 1.6 }}>
                     YOUR HUNGRY IS FULFILLED IN SPECIAL WAY

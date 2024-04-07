@@ -1,4 +1,5 @@
-import logo from '../assets/toxmo_logo.svg'
+import logo from '/assets/toxmo_logo.svg'
+import { HashLink as Link } from 'react-router-hash-link';
 
 function Intro() {
     return (
@@ -10,9 +11,9 @@ function Intro() {
                             <img src={logo} alt="Toxmo Logo" width={'150px'} height={'50px'} />
                         </div>
                         <div className="right flex-row hamburger" style={{ gap: '2rem' }}>
-                            <a href="#product">Product</a>
-                            <a href="#waitlist">Join Waitlist</a>
-                            <a href="#contact">Contact</a>
+                            <Link to="#product" smooth>Product</Link>
+                            <Link to="#waitlist" smooth>Join Waitlist</Link>
+                            <Link to="#contact" smooth>Contact</Link>
                         </div>
                     </ul>
                 </nav>
@@ -25,7 +26,7 @@ function Intro() {
                             </div>
                         </div>
                         <div className="intro__img">
-                            <img src="src/assets/hero_img.jpeg" alt="hero image" height='400px' className='image_shadow' />
+                            <img src="/assets/hero_img.jpeg" alt="hero image" height='400px' className='image_shadow' />
                         </div>
                     </div>
                 </div>

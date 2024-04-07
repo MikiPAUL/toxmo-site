@@ -164,4 +164,19 @@ button[type="submit"] {
   footer nav {
     justify-content: center;
   }
+
+  footer ul {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-device-width: 800px) {
+  .center-iframe {
+    display: flex;
+    justify-content: center;
+  }
+
+  iframe {
+    width: 80%;
+  }
 }
