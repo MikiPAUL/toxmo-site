@@ -44,6 +44,7 @@ video {
   max-width: 100%;
 }
 
+
 header {
   background: rgb(255, 213, 0);
   background: linear-gradient(135deg, rgba(255, 213, 0, 1) 13%, rgba(57, 18, 70, 1) 100%);
@@ -55,6 +56,16 @@ header {
   width: 80%;
   margin: 0 auto;
   padding: 4rem;
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+.container {
+  width: 90%;
 }
 
 .flex-col {
@@ -146,20 +157,38 @@ button[type="submit"] {
 }
 
 @media screen and (max-device-width: 800px) {
+  .intro__img {
+    width: 100%;
+  }
   .image_shadow {
     margin: 0 auto;
     margin-top: 1rem;
     border-radius: 14px;
   }
 
+ 
   .hamburger {
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 150px;
+    align-items: right;
     gap: 0 !important;
     line-height: 2.5;
+    font-size: 23px;
   }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 55px; /* Adjust as needed */
+    left: 0;
+    background-color: black;
+    padding: 25px;
+    border: 1px solid #ccc;
+    width:100%;
+    height:auto;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
 
   footer nav {
     justify-content: center;
@@ -169,6 +198,18 @@ button[type="submit"] {
     justify-content: space-evenly;
   }
 }
+.copyright {
+  text-align: center; /* Align the content to the center */
+  margin-top: 20px;
+  color: white; /* Add some margin from the top */
+}
+
+.copyright span {
+  font-size: 18px; /* Adjust the font size of the copyright symbol */
+  vertical-align: middle; 
+  color: white;/* Align the symbol vertically */
+}
+
 
 @media screen and (max-device-width: 800px) {
   .center-iframe {
@@ -177,7 +218,7 @@ button[type="submit"] {
   }
 
   iframe {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -192,10 +233,12 @@ button[type="submit"] {
 
   .product__content--left,
   .product__content--right {
-    min-width: 200px;
+    min-width: 300px;
     padding: 1rem;
   }
-
+ .prod_font {
+  font-size: 16px;
+ }
   .container {
     padding: 1rem;
   }
