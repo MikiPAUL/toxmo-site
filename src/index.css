@@ -1,0 +1,167 @@
+/* makes sizing simpler */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* min body height */
+
+body {
+  min-height: 100vh;
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+header {
+  background: rgb(255, 213, 0);
+  background: linear-gradient(135deg, rgba(255, 213, 0, 1) 13%, rgba(57, 18, 70, 1) 100%);
+  background-clip: border-box;
+  color: white;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 4rem;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.space-btwn {
+  justify-content: space-between;
+}
+
+.gap-5 {
+  gap: .5rem;
+}
+
+.waitlist__form {
+  row-gap: .5em;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.hero {
+  width: max(70%, 300px);
+}
+
+.intro__content {
+  width: max(60%, 200px);
+  line-height: 1.6;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.intro__content>h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.intro__content>h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/* .hero_area {
+  padding: 3em 0;
+} */
+
+input[type=text],
+input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  all: none;
+  width: 100px;
+  padding: .5rem .25rem;
+  margin: 'auto 0';
+  background-color: #1b1b1b;
+  border: 0;
+}
+
+.product__content--left {
+  width: 40%;
+  padding: 2rem;
+  min-width: 400px;
+}
+
+.product__content--right {
+  width: 40%;
+  padding: 2rem;
+  min-width: 400px;
+}
+
+.image_shadow {
+  filter: drop-shadow(5px 5px 2.5px black);
+  border-radius: 14px;
+}
+
+@media screen and (max-device-width: 800px) {
+  .image_shadow {
+    margin: 0 auto;
+    margin-top: 1rem;
+    border-radius: 14px;
+  }
+
+  .hamburger {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    gap: 0 !important;
+    line-height: 2.5;
+  }
+
+  footer nav {
+    justify-content: center;
+  }
+}
