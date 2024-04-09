@@ -161,6 +161,11 @@ button[type="submit"] {
     width: 100%;
   }
 
+  .intro__content {
+    width: max(70%, 250px);
+  
+  }
+
   .image_shadow {
     margin: 0 auto;
     margin-top: 1rem;
@@ -182,12 +187,12 @@ button[type="submit"] {
     top: 55px;
     /* Adjust as needed */
     left: 0;
-    background-color: black;
+    background-color: rgb(27, 27, 27);
     padding: 25px;
     border: 1px solid #ccc;
     width: 100%;
     height: auto;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
   }
 

@@ -1,22 +1,36 @@
-import Intro from "./components/intro"
-import Product from "./components/product"
-import WaitList from "./components/waitlist"
-import Contact from "./components/contact"
-import './App.css'
-import React from "react"
-import { BrowserRouter } from 'react-router-dom'
+import React from "react";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Intro from "./components/intro";
+import Product from "./components/product";
+import WaitList from "./components/waitlist";
+import Contact from "./components/contact";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import FAQs from "./components/FAQs";
+import './App.css';
 
 function App() {
   return (
     <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainLayout />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/faqs" element={<FAQs />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+function MainLayout() {
+  return (
+    <>
       <Intro />
       <main>
         <Product />
         <WaitList />
       </main>
       <Contact />
-    </BrowserRouter>
-  )
+    </>
+  );
 }
 
-export default App
+export default App;
