@@ -45,8 +45,8 @@ function Intro() {
                             )}
                             {isMobile && isMenuOpen && (
                                 <div className="dropdown-menu">
-                                    <Link to="#product" smooth>Product</Link><br></br>
-                                    <Link to="#waitlist" smooth>Join Waitlist</Link><br></br>
+                                    <Link to="#product" smooth>Product</Link><br></br><br></br>
+                                    <Link to="#waitlist" smooth>Join Waitlist</Link><br></br><br></br>
                                     <Link to="#contact" smooth>Contact</Link><br></br>
                                 </div>
                             )}

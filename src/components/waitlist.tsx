@@ -108,7 +108,7 @@ function WaitList() {
                     <input type="text" name="city" id="city" placeholder="City" onChange={(e) => setCity(e.target.value)} required />
                     <div style={{ display: 'flex', justifyContent: 'center' }}>
                         <button type="submit">
-                            <span style={{ color: 'white' }}>Submit</span>
+                            <span style={{ color: 'white', fontSize: '16px' }}>Submit</span>
                         </button>
                     </div>
                 </form>
