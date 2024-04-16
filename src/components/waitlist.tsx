@@ -42,7 +42,7 @@ function WaitList() {
             })
         }
 
-        fetch('http://backend.toxmo.in:3000/api/waitList', options)
+        fetch('https://backend.toxmo.in/api/waitList', options)
             .then(response => {
                 if (response.status !== 201) {
                     setIsOpen(true)
