@@ -81,10 +81,12 @@ function WaitList() {
                 <h3 style={{ textAlign: "center", padding: '2.9rem', color: '#1b1b1b', fontWeight: 400, lineHeight: 1.6 }}>
                     YOUR HUNGRY IS FULFILLED IN SPECIAL WAY
                 </h3>
+                <h3 style={{ textAlign: "center", padding: '1.9rem', color: '#1b1b1b', fontWeight: 400, lineHeight: 1.6, marginTop:'-35px' }}>
+                <span style={{color:'red'}}>Note:</span>If you're lucky upon joining the waitlist, you'll gain instant access to our exclusive Toxmo WhatsApp Club, where you will be the first to know exciting food offers and much more on Toxmo app!"
+                </h3>
                 <h2 style={{ fontSize: '3rem', fontWeight: "bold", textAlign: "center", paddingBottom: '2rem' }}>Join the Waitlist</h2>
                 <Modal
                     isOpen={modalIsOpen}
-                    // onAfterOpen={afterOpenModal}
                     onRequestClose={() => { setIsOpen(false) }}
                     style={customStyles}
                     contentLabel="form submission modal"
@@ -94,11 +96,16 @@ function WaitList() {
                         </div>
                         <h2 style={{ textAlign: 'center', color: modalContent.color, fontWeight: 'bold', lineHeight: '3.2' }}>{modalContent.status}</h2>
                         <p style={{ textAlign: 'center', paddingBottom: '.5rem' }}>{modalContent.desc}</p>
-                    </div>
+                        {modalContent.status === 'SUCCESS' && (
+                            <div style={{ textAlign: 'center', color:'green', fontWeight:'bold' }}>
+                                <a href="https://chat.whatsapp.com/Dc1l86oY0ei3Kc0b4AwSZY" target="_blank" rel="noopener noreferrer">Join our WhatsApp group</a>
+                            </div>
+                        )}
+                    </div><br></br>
                     <div onClick={() => { setIsOpen(false) }} style={
                         { height: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: modalContent.color, color: 'white' }
                     }>
-                        Continue
+                        Done
                     </div>
                 </Modal>
                 <form onSubmit={handleSubmit} className="waitlist__form flex-col" style={{ rowGap: '1.5rem', paddingBottom: '35px' }}>

@@ -260,7 +260,9 @@ button[type="submit"] {
 
   .container {
     padding: 1rem;
-  }
+    
+}
+
 
   #product .container {
     padding: 0rem;
