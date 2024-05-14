@@ -78,8 +78,8 @@ function WaitList() {
     return (
         <section style={{ backgroundColor: '#ffd500', color: 'white' }} id="waitlist">
             <div className="container">
-                <h3 style={{ textAlign: "center", padding: '2.9rem', color: '#1b1b1b', fontWeight: 400, lineHeight: 1.6 }}>
-                    YOUR HUNGRY IS FULFILLED IN SPECIAL WAY
+                <h3 style={{ textAlign: "center", fontWeight:'bold', padding: '2.9rem', color: '#1b1b1b', lineHeight: 1.6 }}>
+                Commerce meets social and personalization for better customer happiness
                 </h3>
                 <h3 style={{ textAlign: "center", padding: '1.9rem', color: '#1b1b1b', fontWeight: 400, lineHeight: 1.6, marginTop:'-35px' }}>
                 <span style={{color:'red'}}>Note:</span>If you're lucky upon joining the waitlist, you'll gain instant access to our exclusive Toxmo WhatsApp Club, where you will be the first to know exciting food offers and much more on Toxmo app!"

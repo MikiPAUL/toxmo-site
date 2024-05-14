@@ -59,7 +59,7 @@ function Intro() {
                         <div className="hero flex-col" style={{ justifyContent: 'center', transition: 'justify-content 0.3s ease-in-out' }}>
                             <div className="intro__content" style={{ transition: 'margin-top 0.3s ease-in-out' }}>
                                 <h1>Toxmo</h1>
-                                <h2>1 minute video-based food delivery and dining</h2>
+                                <h2>social, video-based food delivery and dining</h2>
                             </div>
                         </div>
                         <div className="intro__img" style={{ transition: 'margin-top 0.3s ease-in-out' }}>
