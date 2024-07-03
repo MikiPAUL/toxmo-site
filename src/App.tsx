@@ -15,6 +15,7 @@ function App() {
         <Route path="/" element={<MainLayout />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/faqs" element={<FAQs />} />
+        {/* <Route path="/.well-known/assetlinks.json" element={<AssetLink />} /> */}
       </Routes>
     </BrowserRouter>
   );
